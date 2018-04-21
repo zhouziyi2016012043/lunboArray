@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<title>轮播图-数组</title>
+</head>
+<body>
+	<div id="nav">
+	<!-- 	<div class="imgs"><img src="img/1.jpg" width="960" height="600" id="img1">
+		<div class="buttons"><</div>
+		<div class="buttons">></div>
+		</div> -->
+		<img src="img/1.jpg" id="img1">
+		<a href="#" id="left1"><</a> 
+		<a href="#" id="right1">></a> 
+	</div>
+
+	<script type="text/javascript">
+		var oImg=document.getElementById("img1");
+		var oRight=document.getElementById("right1");
+		var oLeft=document.getElementById("left1");
+		var imgArray=["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg"];
+		// 现在的imgArray.length是6
+		var i=0;
+		oRight.onclick=function(){
+			i++;
+			// if(i==imgArray.length-1){
+				if(i==5){
+				i=0
+			}
+			oImg.src=imgArray[i];
+		}
+oLeft.onclick=function(){
+			i--;
+			if(i==-1){
+				i=imgArray.length-2
+			}
+			oImg.src=imgArray[i];
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@charset utf-8;
+#nav{
+	width:1200px;
+	height:700px;
+	margin:50px auto;
+	background-color: pink;
+	position: relative;
+}
+
+img{
+	width:960px ;
+	height:600px; 
+	margin:50px 120px;
+}
+
+#nav a{text-decoration-line: none;
+font-weight: bold;
+width: 25px;
+height:25px;
+background-color: lightblue;
+font:20px/50px;
+border-radius: 5px;
+position: absolute;
+padding: 20px;
+}
+
+#left1{
+left: 35px;
+top:360px;	
+}
+
+#right1{
+right: 35px;
+top:360px;
+}
